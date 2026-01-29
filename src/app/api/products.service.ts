@@ -9,6 +9,6 @@ export class ProductsService {
   constructor(private productServiceAPI: HttpClient) { }
 
   getProducts(){
-    return this.productServiceAPI.get<any>("https://dummyjson.com/products");
+    return this.productServiceAPI.get<any>('https://dummyjson.com/products');
   }
 }

@@ -1,17 +1,17 @@
-<!-- PRODUCT CARD -->
-<div class="col-md-3">
-  <div class="card h-100 shadow-sm border-0">
+<div>
+    <div class="card h-100 shadow-sm border-0">
 
-    <img src="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp" class="card-img-top" alt="Product Image">
+    <img [src]="product.images" class="card-img-top" alt="Product Image">
 
     <div class="card-body text-center">
-      <span class="badge bg-secondary mb-2">Category</span>
-      <h6 class="fw-semibold mt-2">Product Title</h6>
-      <p class="text-warning fw-bold mb-3">$149.00</p>
+      <span class="badge bg-secondary mb-2">{{product.category}}</span>
+      <h6 class="fw-semibold mt-2">{{product.title}}</h6>
+      <p class="text-warning fw-bold mb-3">{{product.price}}</p>
 
       <a href="#" class="btn btn-outline-dark btn-sm">View Product</a>
     </div>
-
   </div>
 </div>
+
+
 

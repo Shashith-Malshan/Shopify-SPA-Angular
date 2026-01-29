@@ -2,8 +2,13 @@
     <app-navbar></app-navbar>
 </div>
 
-<div>
-    <app-product-card></app-product-card>
+<div class="row">
+    @for(product of productList; track $index){
+        <div class="col-md-4 mb-3">
+            <app-product-card [product]="product"></app-product-card>
+        </div>
+    }   
+   
 </div>
 
 <div>
